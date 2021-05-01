@@ -1,0 +1,7 @@
+opencv-python==4.5.1.48
+numpy==1.19.5
+imutils==0.5.4
+dlib==19.22.0
+yapf==0.31.0
+flake8==3.5.0
+isort==5.8.0

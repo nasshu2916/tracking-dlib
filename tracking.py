@@ -128,7 +128,7 @@ def get_image_points(shape_2d):
 
 
 def get_direction(eulerAngles):
-    return {"pitch": float(eulerAngles[0]), "yaw": float(eulerAngles[1]), "roll": float(eulerAngles[2])}
+    return {"Pitch": float(eulerAngles[0]), "Yaw": float(eulerAngles[1]), "Roll": float(eulerAngles[2])}
 
 
 def draw_face_landmarks(img, shape_2d):
@@ -138,9 +138,9 @@ def draw_face_landmarks(img, shape_2d):
 
 
 def draw_face_direction(img, image_points, nose_end_point2D, direction):
-    cv2.putText(img, 'yaw' + str(direction["yaw"]), (20, 10), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255), 2)
-    cv2.putText(img, 'pitch' + str(direction["pitch"]), (20, 25), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255), 2)
-    cv2.putText(img, 'roll' + str(direction["roll"]), (20, 40), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255), 2)
+    cv2.putText(img, 'Yaw' + str(direction["Yaw"]), (20, 10), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255), 2)
+    cv2.putText(img, 'Pitch' + str(direction["Pitch"]), (20, 25), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255), 2)
+    cv2.putText(img, 'Roll' + str(direction["Roll"]), (20, 40), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255), 2)
 
     p1 = (int(image_points[0][0]), int(image_points[0][1]))
     p2 = (int(nose_end_point2D[0][0][0]), int(nose_end_point2D[0][0][1]))
